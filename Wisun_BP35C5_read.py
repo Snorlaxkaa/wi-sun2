@@ -1,9 +1,7 @@
 import serial
 from time import sleep
 
-# 初始化兩個序列埠連線
-# bp35c5：連接 ROHM BP35C5（Wi-SUN 模組）
-# esp32：連接 ESP32（接收轉發的 binary 封包）
+
 bp35c5 = serial.Serial("COM7", 115200)
 esp32 = serial.Serial("COM12", 115200)
 
